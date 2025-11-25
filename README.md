@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Johnson - Portfolio</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Configure Tailwind for Inter font and custom colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary-dark': '#111827', // Gray-900 equivalent (Dark Background)
+                        'secondary-dark': '#1F2937', // Gray-800 equivalent (Card/Section Background)
+                        'accent': '#A78BFA', // Lilac/Violet-400 (New Accent Color)
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-primary-dark text-gray-100 font-sans">
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-primary-dark bg-opacity-95 backdrop-blur-sm shadow-lg">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#hero" class="text-2xl font-bold text-accent hover:text-white transition duration-300">
+                A<span class="text-gray-100">J</span>
+            </a>
+            <div class="space-x-4 hidden md:flex">
+                <a href="#about" class="text-gray-300 hover:text-accent transition duration-300">About</a>
+                <a href="#skills" class="text-gray-300 hover:text-accent transition duration-300">Skills</a>
+                <a href="#projects" class="text-gray-300 hover:text-accent transition duration-300">Projects</a>
+                <a href="#contact" class="text-gray-300 hover:text-accent transition duration-300">Contact</a>
+            </div>
+            <!-- Mobile Menu Button (Optional, simple for this single file) -->
+        </nav>
+    </header>
+
+    <main>
+        <!-- 1. Hero Section -->
+        <section id="hero" class="section-padding min-h-screen flex items-center justify-center">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-4xl">
+                <div class="mb-8">
+                    <!-- Profile image placeholder -->
+                    <img class="w-32 h-32 mx-auto rounded-full object-cover border-4 border-accent shadow-xl"
+                         src="https://placehold.co/128x128/1F2937/A78BFA?text=AJ"
+                         alt="Alex Johnson Profile Picture"
+                         onerror="this.onerror=null; this.src='https://placehold.co/128x128/1F2937/A78BFA?text=AJ'">
+                </div>
+                <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-4">
+                    Hi, I'm <span class="text-accent">Alex Johnson</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-400 mb-8">
+                    Full Stack Developer specializing in clean, scalable web applications.
+                </p>
+                <a href="#projects" class="inline-block bg-accent hover:bg-violet-500 text-primary-dark font-semibold py-3 px-8 rounded-lg shadow-2xl transition duration-300 transform hover:scale-[1.02] active:scale-95">
+                    View My Work
+                </a>
+            </div>
+        </section>
+
+        <!-- 2. About Me Section -->
+        <section id="about" class="section-padding bg-secondary-dark">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+                <h2 class="text-4xl font-bold text-center text-accent mb-12">About Me</h2>
+                <div class="bg-primary-dark p-8 rounded-xl shadow-2xl">
+                    <p class="text-lg text-gray-300 leading-relaxed mb-6">
+                        I'm Alex, a passionate developer with 5+ years of experience building modern web solutions from concept to deployment. My expertise lies in the JavaScript ecosystem, spanning from robust backend APIs (Node.js) to dynamic, responsive frontends (React/Angular).
+                    </p>
+                    <p class="text-lg text-gray-300 leading-relaxed">
+                        I thrive in collaborative environments and am committed to writing clean, maintainable code. When I'm not coding, I enjoy exploring new technology trends and contributing to open-source projects. I believe in the power of technology to simplify complex problems.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Skills Section -->
+        <section id="skills" class="section-padding">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+                <h2 class="text-4xl font-bold text-center text-accent mb-12">Technical Skills</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
+                    <!-- Skill Card 1 -->
+                    <div class="text-center p-4 bg-secondary-dark rounded-xl shadow-lg hover:shadow-accent/50 transition duration-300 transform hover:translate-y-[-4px]">
+                        <p class="text-2xl mb-1">⚛️</p>
+                        <p class="font-semibold text-gray-200">React</p>
+                    </div>
+                    <!-- Skill Card 2 -->
+                    <div class="text-center p-4 bg-secondary-dark rounded-xl shadow-lg hover:shadow-accent/50 transition duration-300 transform hover:translate-y-[-4px]">
+                        <p class="text-2xl mb-1">💻</p>
+                        <p class="font-semibold text-gray-200">TypeScript</p>
+                    </div>
+                    <!-- Skill Card 3 -->
+                    <div class="text-center p-4 bg-secondary-dark rounded-xl shadow-lg hover:shadow-accent/50 transition duration-300 transform hover:translate-y-[-4px]">
+                        <p class="text-2xl mb-1">🚀</p>
+                        <p class="font-semibold text-gray-200">Node.js</p>
+                    </div>
+                    <!-- Skill Card 4 -->
+                    <div class="text-center p-4 bg-secondary-dark rounded-xl shadow-lg hover:shadow-accent/50 transition duration-300 transform hover:translate-y-[-4px]">
+                        <p class="text-2xl mb-1">🎨</p>
+                        <p class="font-semibold text-gray-200">Tailwind CSS</p>
+                    </div>
+                    <!-- Skill Card 5 -->
+                    <div class="text-center p-4 bg-secondary-dark rounded-xl shadow-lg hover:shadow-accent/50 transition duration-300 transform hover:translate-y-[-4px]">
+                        <p class="text-2xl mb-1">🐘</p>
+                        <p class="font-semibold text-gray-200">PostgreSQL</p>
+                    </div>
+                    <!-- Skill Card 6 -->
+                    <div class="text-center p-4 bg-secondary-dark rounded-xl shadow-lg hover:shadow-accent/50 transition duration-300 transform hover:translate-y-[-4px]">
+                        <p class="text-2xl mb-1">☁️</p>
+                        <p class="font-semibold text-gray-200">AWS / GCP</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Projects Section -->
+        <section id="projects" class="section-padding bg-secondary-dark">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+                <h2 class="text-4xl font-bold text-center text-accent mb-12">Featured Projects</h2>
+                <div class="grid md:grid-cols-2 gap-10">
+
+                    <!-- Project 1 -->
+                    <div class="bg-primary-dark rounded-xl shadow-2xl overflow-hidden hover:shadow-accent/60 transition duration-500">
+                        <img class="w-full h-48 object-cover"
+                             src="https://placehold.co/600x400/1F2937/A78BFA?text=Project+Management+Dashboard"
+                             alt="Project 1 Image"
+                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/1F2937/A78BFA?text=Project+Management+Dashboard'">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-white mb-2">SaaS Project Tracker</h3>
+                            <p class="text-gray-400 mb-4">
+                                A comprehensive real-time project management dashboard built with React and Firestore. Features include Kanban boards, user authentication, and drag-and-drop functionality.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="text-xs font-medium bg-gray-700 text-gray-200 px-3 py-1 rounded-full">React</span>
+                                <span class="text-xs font-medium bg-gray-700 text-gray-200 px-3 py-1 rounded-full">TypeScript</span>
+                                <span class="text-xs font-medium bg-gray-700 text-gray-200 px-3 py-1 rounded-full">Firestore</span>
+                            </div>
+                            <a href="#" class="text-accent hover:text-white font-medium inline-flex items-center group">
+                                View Demo
+                                <svg class="w-4 h-4 ml-1 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="bg-primary-dark rounded-xl shadow-2xl overflow-hidden hover:shadow-accent/60 transition duration-500">
+                        <img class="w-full h-48 object-cover"
+                             src="https://placehold.co/600x400/1F2937/A78BFA?text=E-commerce+API"
+                             alt="Project 2 Image"
+                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/1F2937/A78BFA?text=E-commerce+API'">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-white mb-2">Scalable E-commerce API</h3>
+                            <p class="text-gray-400 mb-4">
+                                Developed a highly performant RESTful API for an e-commerce platform using Node.js, Express, and PostgreSQL. Focused on security, rate limiting, and caching.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="text-xs font-medium bg-gray-700 text-gray-200 px-3 py-1 rounded-full">Node.js</span>
+                                <span class="text-xs font-medium bg-gray-700 text-gray-200 px-3 py-1 rounded-full">Express</span>
+                                <span class="text-xs font-medium bg-gray-700 text-gray-200 px-3 py-1 rounded-full">PostgreSQL</span>
+                            </div>
+                            <a href="#" class="text-accent hover:text-white font-medium inline-flex items-center group">
+                                View Code
+                                <svg class="w-4 h-4 ml-1 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Contact Section -->
+        <section id="contact" class="section-padding">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl text-center">
+                <h2 class="text-4xl font-bold text-accent mb-4">Get In Touch</h2>
+                <p class="text-xl text-gray-400 mb-8">
+                    I'm always open to new opportunities and collaborations. Send me a message!
+                </p>
+
+                <div class="bg-secondary-dark p-8 rounded-xl shadow-2xl">
+                    <form onsubmit="handleContactSubmit(event)">
+                        <div class="mb-6">
+                            <input type="text" id="name" name="name" placeholder="Your Name"
+                                   class="w-full p-4 bg-primary-dark border border-gray-700 rounded-lg focus:ring-accent focus:border-accent outline-none transition duration-300" required>
+                        </div>
+                        <div class="mb-6">
+                            <input type="email" id="email" name="email" placeholder="Your Email"
+                                   class="w-full p-4 bg-primary-dark border border-gray-700 rounded-lg focus:ring-accent focus:border-accent outline-none transition duration-300" required>
+                        </div>
+                        <div class="mb-6">
+                            <textarea id="message" name="message" rows="5" placeholder="Your Message"
+                                      class="w-full p-4 bg-primary-dark border border-gray-700 rounded-lg focus:ring-accent focus:border-accent outline-none transition duration-300" required></textarea>
+                        </div>
+                        <button type="submit"
+                                class="w-full bg-accent hover:bg-violet-500 text-primary-dark font-semibold py-3 px-8 rounded-lg shadow-xl transition duration-300 transform hover:scale-[1.01] active:scale-95">
+                            Send Message
+                        </button>
+                    </form>
+                    <div id="contact-message" class="mt-4 text-sm font-medium hidden"></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-primary-dark border-t border-gray-800 py-6 mt-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-500 text-sm">
+            <p>&copy; 2025 Alex Johnson. All rights reserved. | Built with HTML & Tailwind CSS.</p>
+            <div class="mt-3 space-x-4">
+                <a href="#" class="hover:text-accent transition duration-300">LinkedIn</a>
+                <a href="#" class="hover:text-accent transition duration-300">GitHub</a>
+                <a href="mailto:alex.johnson@example.com" class="hover:text-accent transition duration-300">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
